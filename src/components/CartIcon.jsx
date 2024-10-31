@@ -1,5 +1,3 @@
-// src/components/CartIcon.jsx
-
 import React, { useContext } from 'react';
 import { FaShoppingCart } from 'react-icons/fa'; // Import the shopping cart icon
 import { CartContext } from '../context/CartContext'; // Import CartContext
