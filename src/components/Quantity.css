@@ -1,0 +1,77 @@
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-selector span {
+    font-size: 18px;
+    font-weight: bold;
+    width: 32px;
+    text-align: center;
+  }
+  
+  /* Base styling for quantity buttons */
+  .quantity-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  span{
+    padding-top: 20px;
+  }
+
+  .decrement-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+
+  
+  /* Add to Cart Button */
+  .add2Cart {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add2Cart:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Toast Notification */
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    opacity: 0.9;
+    z-index: 1000;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+  }
+  
+  @keyframes fadein {
+    from { bottom: 10px; opacity: 0; }
+    to { bottom: 20px; opacity: 0.9; }
+  }
+  
+  @keyframes fadeout {
+    from { bottom: 20px; opacity: 0.9; }
+    to { bottom: 10px; opacity: 0; }
+  }
+  
